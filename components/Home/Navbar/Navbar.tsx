@@ -40,7 +40,7 @@ const Navbar = ({ openNav }: Props) => {
           alt="LOGO"
           width={170}
           height={170}
-          className="ml-[-1.5rem] sm:ml-0"
+          className="sm:ml-0 ml-4"
           style={{ width: "auto", height: "auto" }}
         />
 
