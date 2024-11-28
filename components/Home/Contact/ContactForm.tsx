@@ -2,28 +2,6 @@
 import React, { useState } from "react";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    lastName: "",
-    firstName: "",
-    email: "",
-    phoneNumber: "",
-    role: "",
-    message: "",
-  });
-
-  // Handle input changes
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-  };
-
   return (
     <div className="bg-[#140c1c] rounded-lg p-4 sm:p-10">
       <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
@@ -37,24 +15,17 @@ const ContactForm = () => {
         on new challenges. Let&apos;s talk about your project!
       </p>
       {/* Form */}
-      <form
-        onSubmit={handleSubmit}
-        className="mt-8 block w-full overflow-hidden"
-      >
+      <form className="mt-8 block w-full overflow-hidden">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <input
             type="text"
             name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
             placeholder="Last name"
             className="flex-1 bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none w-full"
           />
           <input
             type="text"
             name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
             placeholder="First name"
             className="flex-1 bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none w-full"
           />
@@ -63,16 +34,12 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             placeholder="Email address"
             className="flex-1 bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none w-full"
           />
           <input
             type="text"
             name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
             placeholder="Phone Number"
             className="flex-1 bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none w-full"
           />
@@ -80,7 +47,6 @@ const ContactForm = () => {
         <div>
           <select
             name="role"
-            value={formData.role}
             className="w-full mt-5 bg-black text-white placeholder:text-gray-600 px-4 py-3.5 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none"
           >
             <option value="" disabled>
@@ -94,8 +60,6 @@ const ContactForm = () => {
         </div>
         <textarea
           name="message"
-          value={formData.message}
-          onChange={handleChange}
           className="w-full mt-5 bg-black text-white placeholder:text-gray-600 px-4 py-3.5 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none"
           rows={7}
           placeholder="Message"
