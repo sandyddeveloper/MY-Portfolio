@@ -12,12 +12,14 @@ const ContactForm = () => {
   });
 
   // Handle input changes
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
   };
@@ -25,12 +27,14 @@ const ContactForm = () => {
   return (
     <div className="bg-[#140c1c] rounded-lg p-4 sm:p-10">
       <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
-        Let's work together!
+        Let&apos;s Work Together!
       </h1>
+
       <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et odit,
-        cum minima, quaerat hic rem odio iusto perferendis, sint quae ea?
-        Doloremque quaerat sequi culpa voluptatem iure hic in.
+        Feel free to reach out if you’re looking for a developer with a keen eye
+        for detail, excellent problem-solving skills, and a love for coding. I
+        specialize in frontend and backend technologies, and I am ready to take
+        on new challenges. Let&apos;s talk about your project!
       </p>
       {/* Form */}
       <form
@@ -77,7 +81,6 @@ const ContactForm = () => {
           <select
             name="role"
             value={formData.role}
-            onChange={handleChange}
             className="w-full mt-5 bg-black text-white placeholder:text-gray-600 px-4 py-3.5 rounded-md border-[1.5px] border-gray-200 border-opacity-15 outline-none"
           >
             <option value="" disabled>

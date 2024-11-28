@@ -10,8 +10,8 @@ export default {
     extend: {
       keyframes: {
         fadeInAndScale: {
-          "0%": { opacity: 0, transform: "scale(0.9)" },
-          "100%": { opacity: 1, transform: "scale(1)" },
+          "0%": { opacity: "0", transform: "scale(0.9)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
         },
         glow: {
           "0%, 100%": {
