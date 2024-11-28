@@ -40,7 +40,9 @@ const Navbar = ({ openNav }: Props) => {
           width={170}
           height={170}
           className="ml-[-1.5rem] sm:ml-0"
+          style={{ width: "auto", height: "auto" }}
         />
+
         {/* LINKs */}
         <div className="flex items-center space-x-10">
           <div className="hidden lg:flex items-center space-x-8">
