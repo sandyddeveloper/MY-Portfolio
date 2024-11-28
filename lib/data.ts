@@ -234,7 +234,7 @@ export const blogs = [
 ];
 
 export const contactData = {
-  phone: "+91 9345693386",
+  address: "Chenni, india",
   email: "sandyddeveloper@gmail.com",
-  address: "Chennai , India",
+  github: "sandyddeveloper",
 };

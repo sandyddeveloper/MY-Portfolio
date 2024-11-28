@@ -5,8 +5,8 @@ import BlogCart from "./BlogCart";
 
 const Blog = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#0f0715]">
-      <SeactionHeading>Our Blog</SeactionHeading>
+    <div data-aos="fade-up" className="pt-16 pb-16 bg-[#0f0715]">
+      <SeactionHeading data-aos="flip-right">Our Blog</SeactionHeading>
       <div className="w-[80%] mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center">
         {blogs.map((blog) => {
           return (

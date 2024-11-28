@@ -6,12 +6,16 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#050709]">
-      <SeactionHeading>My Projects</SeactionHeading>
-      <div className="w-[80%] mx-auto grid pt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center">
+    <div data-aos="fade-up" className="pt-16 pb-16 bg-[#050709]">
+      <SeactionHeading data-aos="flip-right">My Projects</SeactionHeading>
+      <div
+        data-aos="zoom-in-up"
+        className="w-[80%] mx-auto grid pt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center"
+      >
         {projectData.map((project) => {
           return (
             <div
+              data-aos="zoom-in-up"
               key={project.id}
               className="bg-white p-6 rounded-lg hover:scale-105 transition-all duration-300"
             >

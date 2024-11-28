@@ -10,22 +10,37 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* CONTENT */}
           <div>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
+            <h1
+              data-aos="fade-right"
+              className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold"
+            >
               Hey there! I’m {BaseInfo.name}, nice to meet you.
             </h1>
-            <h1 className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] lg:leading-[3.5rem] xl:leading-[4rem] text-white">
+            <h1
+              data-aos="fade-left"
+              className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3.5rem] lg:leading-[3.5rem] xl:leading-[4rem] text-white"
+            >
               {BaseInfo.position}
             </h1>
-            <p className="mt-6 text-sm md:text-base text-white text-opacity-60">
+            <p
+              data-aos="zoom-out-right"
+              className="mt-6 text-sm md:text-base text-white text-opacity-60"
+            >
               {BaseInfo.description}
             </p>
-            <button className="md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-blue-900 flex items-center space-x-2">
+            <button
+              data-aos="fade-up-right"
+              className="md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-blue-900 flex items-center space-x-2"
+            >
               <span>Download CV</span>
               <FaDownload />
             </button>
           </div>
           {/* IMAGE */}
-          <div className="mx-auto hidden lg:block rounded-[3rem] border-[0.1rem] border-blue-950 overflow-x-hidden">
+          <div
+            data-aos="fade-left"
+            className="mx-auto hidden lg:block rounded-[3rem] border-[0.1rem] border-blue-950 overflow-x-hidden"
+          >
             <Image
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
