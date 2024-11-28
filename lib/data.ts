@@ -130,7 +130,7 @@ export const skillsData = [
   {
     id: 4,
     title: "Flask",
-    image: "/images/flask.png",
+    image: "/images/Flask.png",
     percent: "67%",
   },
   {
