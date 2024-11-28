@@ -6,7 +6,7 @@ import { FaCheck } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div data-aos="fade-up" className="pt-16 pb-16 bg-[#050709]">
+    <div id="about" data-aos="fade-up" className="pt-16 pb-16 bg-[#050709]">
       {/* HEADING */}
       <SeactionHeading data-aos="flip-right">About Me</SeactionHeading>
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-20">

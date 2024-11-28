@@ -6,7 +6,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div data-aos="fade-up" className="pt-16 pb-16 bg-[#050709]">
+    <div id="project" data-aos="fade-up" className="pt-16 pb-16 bg-[#050709]">
       <SeactionHeading data-aos="flip-right">My Projects</SeactionHeading>
       <div
         data-aos="zoom-in-up"
