@@ -1,13 +1,13 @@
 import React from "react";
 import { BaseInfo } from "@/lib/data";
 import { FaDownload } from "react-icons/fa";
+import Image from "next/image";
 
 interface BaseInfoType {
   name?: string;
   position?: string;
   description?: string;
-  profilePic?: string;
-  cvLink?: string; // Relative path to the CV file
+  cvLink?: string;
 }
 
 const Hero: React.FC = () => {
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             </h1>
             <h1
               data-aos="fade-left"
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white"
+              className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white"
             >
               {info.position || "Full-Stack Developer"}
             </h1>
@@ -62,6 +62,18 @@ const Hero: React.FC = () => {
               <span>Download CV</span>
               <FaDownload />
             </button>
+          </div>
+          {/* IMAGE */}
+          <div
+            data-aos="fade-left"
+            className="mx-auto hidden lg:block rounded-[3rem] border-[0.1rem] border-blue-950 overflow-x-hidden"
+          >
+            <Image
+              src={BaseInfo.profilePic}
+              alt={BaseInfo.name}
+              width={500}
+              height={500}
+            />
           </div>
         </div>
       </div>

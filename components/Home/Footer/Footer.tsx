@@ -16,11 +16,21 @@ const Footer = () => {
         />
       </div>
       <div className="flex items-center flex-wrap justify-center space-x-10 space-y-4 text-white font-bold pt-5">
-        <div className="pt-[13px]">Home.</div>
-        <div>Services.</div>
-        <div>Project.</div>
-        <div>Reviews.</div>
-        <div>Contact.</div>
+        <div className="pt-[14px]">
+          <a href="#home">Home</a>
+        </div>
+        <div>
+          <a href="#services">Services</a>
+        </div>
+        <div>
+          <a href="#projects">Projects</a>
+        </div>
+        <div>
+          <a href="#reviews">Reviews</a>
+        </div>
+        <div>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
       <p className="text-white text-opacity-60 mt-6 text-center">
         © 2024 All Rights Reserved by DEVxNET
