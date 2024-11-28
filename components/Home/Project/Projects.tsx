@@ -21,11 +21,13 @@ const Projects = () => {
             >
               <Link href={project.url} target="_blank">
                 <Image
+                  priority
                   src={project.image}
                   alt="project"
                   width={300}
                   height={300}
                   className="w-full"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
             </div>

@@ -7,7 +7,7 @@ type Props = {
     id: number;
     title: string;
     image: string;
-    percent: string; // A percentage value, e.g., "75%"
+    percent: string;
   };
 };
 
@@ -44,11 +44,13 @@ const SkillCard = ({ skills }: Props) => {
       className="p-6 hover:bg-blue-900 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900"
     >
       <Image
+        priority
         src={image}
         alt={title}
         width={80}
         height={80}
         className="object-cover mx-auto"
+        style={{ width: "auto", height: "auto" }}
       />
       <h1 className="text-[18px] mt-4 text-white font-[600]">{title}</h1>
       <div className="relative w-full mt-4 bg-gray-700 rounded-lg h-6 overflow-hidden">

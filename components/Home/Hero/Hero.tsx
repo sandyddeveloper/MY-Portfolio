@@ -42,10 +42,12 @@ const Hero = () => {
             className="mx-auto hidden lg:block rounded-[3rem] border-[0.1rem] border-blue-950 overflow-x-hidden"
           >
             <Image
+              priority
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
               width={500}
               height={500}
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
         </div>

@@ -35,6 +35,7 @@ const Navbar = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <Image
+          priority
           src="/images/logo.png"
           alt="LOGO"
           width={170}

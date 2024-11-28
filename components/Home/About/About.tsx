@@ -75,11 +75,13 @@ const About = () => {
         <div className="grid grid-cols-2 gap-16 items-center lg:mx-auto">
           <div data-aos="fade-up-left">
             <Image
+              priority
               src="/images/customer.png"
               alt="image"
               width={80}
               height={80}
               className="mx-auto"
+              style={{ width: "auto", height: "auto" }}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {aboutInfo.client}
@@ -91,11 +93,13 @@ const About = () => {
 
           <div data-aos="fade-up-left">
             <Image
+              priority
               src="/images/completed.png"
               alt="image"
               width={80}
               height={80}
               className="mx-auto"
+              style={{ width: "auto", height: "auto" }}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {aboutInfo.project}
@@ -106,11 +110,13 @@ const About = () => {
           </div>
           <div data-aos="fade-up-left">
             <Image
+              priority
               src="/images/rocket.png"
               alt="image"
               width={80}
               height={80}
               className="mx-auto"
+              style={{ width: "auto", height: "auto" }}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {aboutInfo.website}

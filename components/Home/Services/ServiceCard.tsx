@@ -16,10 +16,12 @@ const ServiceCard = ({ service }: Props) => {
     <Tilt className="shadow-2xl p-6 rounded-lg bg-[#814ced]">
       <Image
         data-aos="zoom-in"
+        priority
         src={service.icon}
         alt={service.title}
         width={50}
         height={50}
+        style={{ width: "auto", height: "auto" }}
       />
       <h1 data-aos="zoom-in" className="mt-4 text-lg font-bold text-gray-100">
         {service.title}

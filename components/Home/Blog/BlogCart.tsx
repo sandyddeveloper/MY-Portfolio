@@ -21,6 +21,7 @@ const BlogCart = ({ blog }: Props) => {
         width={300}
         height={300}
         className="w-full h-[250px] object-cover"
+        style={{ width: "auto", height: "auto" }}
       />
       <div className="p-6">
         <p className="rounded-sm px-6 py-1.5 bg-rose-500 text-white w-fit">
