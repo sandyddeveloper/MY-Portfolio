@@ -3,7 +3,7 @@ export const BaseInfo = {
   position: "Full Stack Web Developer",
   description:
     "I'm a creative and dedicated full-stack web developer with a passion for building intuitive, scalable, and high-performance applications. Skilled in React, Django, and Flask, I specialize in developing seamless front-end interfaces and building strong back-end infrastructures. My goal is to turn complex challenges into elegant, functional solutions that not only meet business needs but also deliver exceptional user experiences. Let’s collaborate to create something truly innovative and impactful.",
-  profilePic: "/images/hero.png",
+  profilePic: "/images/hero.jpg",
   cvLink: "/Santhoshraj.pdf",
 };
 
